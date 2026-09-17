@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for a Position | UrbanSync Infrastructure Consultancy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .application-intro {
+            text-align: center;
+        }
+        .application-form {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .form-note {
+            font-size: 0.9rem;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">
+                <img src="images/logo.png" alt="UrbanSync Logo" style="height: 80px; width: auto; margin-right: 10px;">
+            </a>
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="explore.html">Explore</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <!-- ==================== Audio ==================== -->
+    <audio id="submit-sound" src="apply.wav" preload="auto"></audio>
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+        <!-- Page Introduction -->
+        <section class="application-intro">
+            <h1>Job Application</h1>
+            <p>Complete the form below to apply for a position at UrbanSync Infrastructure Consultancy.</p>
+            <p class="form-note">Fields marked with an asterisk (*) are required.</p>
+        </section>
+
+        <!-- ==================== APPLICATION FORM ==================== -->
+        <section>
+            <form class="application-form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" onsubmit="document.getElementById('submit-sound').play();">
+                <!-- ==================== JOB INFORMATION ==================== -->
+                <fieldset>
+                    <legend>Position Details</legend>
+                    <div class="form-grid">
+                        <div>
+                            <label for="job-reference">Job Reference *</label>
+                            <input type="text" id="job-reference" name="job-reference" maxlength="5" pattern="(?i)(TRS01|EGS02)" title="Enter exactly 5 letters or numbers." required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- ==================== PERSONAL INFORMATION ==================== -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-grid">
+                        <div>
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" maxlength="20" pattern="[A-Za-z]+" title="First name must contain letters only." required>
+                        </div>
+                        <div>
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" maxlength="20" pattern="[A-Za-z]+" title="Last name must contain letters only." required>
+                        </div>
+                        <div>
+                            <label for="dob">Date of Birth *</label>
+                            <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}" title="Enter date in dd/mm/yyyy format." required>
+                        </div>
+                    </div>
+
+                    <!-- Gender -->
+                    <fieldset>
+                        <legend>Gender *</legend>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </fieldset>
+                </fieldset>
+
+                <!-- ==================== ADDRESS INFORMATION ==================== -->
+                <fieldset>
+                    <legend>Contact and Address</legend>
+                    <div class="form-grid">
+                        <div>
+                            <label for="street-address">Street Address *</label>
+                            <input type="text" id="street-address" name="street-address" maxlength="40" required>
+                        </div>
+                        <div>
+                            <label for="suburb">Suburb / Town </label>
+                            <input type="text" id="suburb" name="suburb" maxlength="40">
+                        </div>
+                        <div>
+                            <label for="state">State *</label>
+                            <select id="state" name="state" required>
+                                <option value="">Select a state</option>
+                                <option value="VIC">VIC (Victoria)</option>
+                                <option value="NSW">NSW (New South Wales)</option>
+                                <option value="QLD">QLD (Queensland)</option>
+                                <option value="NT">NT (Northern Territory)</option>
+                                <option value="WA">WA (Western Australia)</option>
+                                <option value="SA">SA (South Australia)</option>
+                                <option value="TAS">TAS (Tasmania)</option>
+                                <option value="ACT">ACT (Australian Capital Territory)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="postcode">Postcode *</label>
+                            <input type="text" id="postcode" name="postcode" maxlength="4" pattern="[0-9]{4}" title="Postcode must contain exactly 4 digits." required>
+                        </div>
+                        <div>
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" title="Phone number must contain 8 to 12 digits." required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- ==================== SKILLS ==================== -->
+                <fieldset>
+                    <legend>Skills *</legend>
+                    <p>Select the skills that best match your experience.</p>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="skills[]" value="data-analysis"> Data Analysis</label>
+                        <label><input type="checkbox" name="skills[]" value="power-bi"> Power BI</label>
+                        <label><input type="checkbox" name="skills[]" value="sql"> SQL</label>
+                        <label><input type="checkbox" name="skills[]" value="python"> Python</label>
+                        <label><input type="checkbox" name="skills[]" value="project-management"> Project Management</label>
+                    </div>
+                </fieldset>
+
+                <!-- ==================== OTHER SKILLS ==================== -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="other-skills">Other Skills</label>
+                    <textarea id="other-skills" name="other-skills" rows="6" placeholder="Describe any other relevant skills, experience, or qualifications."></textarea>
+                </fieldset>
+
+                <!-- ==================== FORM BUTTONS ==================== -->
+                <div class="form-buttons">
+                    <button type="submit" >Submit Application</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p><strong>UrbanSync Infrastructure Consultancy</strong></p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="https://minkhantkyaw3157.atlassian.net/jira/software/projects/UHP/boards/2/backlog?atlOrigin=eyJpIjoiNzYxYjM2ZmIwYTVkNGU5ZWIyMDAyNzI1ZTBjNDgzMmMiLCJwIjoiaiJ9">Jira Project</a>
+            <a href="https://github.com/pyaekhantkyaw/G02-Smart-City-Infrastructure-Consultancy.git" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+            <a href="mailto:urbanSync2026@gmail.com">Email Us</a>
+        </nav>
+        <p>&copy; 2026 UrbanSync Infrastructure Consultancy</p>
+    </footer>
+</body>
+</html>
