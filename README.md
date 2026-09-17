@@ -1,0 +1,1 @@
+# G02-Smart-City-Infrastructure-Consultancy-Part1-Group2
