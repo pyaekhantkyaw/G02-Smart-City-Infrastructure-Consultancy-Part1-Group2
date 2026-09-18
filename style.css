@@ -868,7 +868,7 @@ footer {
   align-items: center;
   gap: 0.5rem 2rem;
   background: var(--color-ink);
-  color: #cfdbe2;
+  color: #ffffff;
   padding: 40px 20px;
   margin-top: 20px;
 }
@@ -897,7 +897,7 @@ footer nav {
 }
 
 footer nav a {
-  color: #cfdbe2;
+  color:  #e0e0e0;
   font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -916,7 +916,7 @@ footer > p.footer-copyright {
   margin: 1rem 0 0;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  color: #9fb0ba;
+  color: #cccccc;
   font-size: 0.85rem;
   width: 100%;
 }
@@ -945,6 +945,18 @@ footer > p.footer-copyright {
 
 .footer-list li {
   text-align: center;
+}
+
+.footer-list li a {
+  color: #e0e0e0;  
+  font-size: 0.9rem; 
+  text-decoration: none;
+}
+
+.footer-list li a:hover,
+.footer-list li a:focus {
+  color: #fff;       
+  border-bottom: 1px solid var(--color-accent);
 }
 
 /* Mobile Adjustments */
