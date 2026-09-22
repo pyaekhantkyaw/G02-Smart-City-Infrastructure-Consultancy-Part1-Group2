@@ -13,12 +13,34 @@ Our company name: **UrbanSync Infrastructure Consultancy**
 - **Oakkar Aung**  
 - **Han Lin Aung**
 
+--- 
+
+## 📖 Project Overview
+UrbanSync Infrastructure Consultancy is a recruitment platform designed to connect talent with smart city projects.  
+
+### Key Features
+- **Homepage**: Hero section with slideshow and “Apply Now” button.  
+- **Jobs Page**: Job listings and a structured application form with validation with linking to the apply.html for the job application 
+- **Explore Page**: Grid‑based cards showcasing services, benefits, and insights.  
+- **About Page**: Team contributions, group photo, and LinkedIn links.  
+- **Footer**: Jira, GitHub, and email links for collaboration.
+
+---
+## 🛠 Tech Stack
+- HTML5  
+- CSS3 (Flexbox + Grid)
+
+---
+## 📜 License
+This project is for educational purposes under COS‑10026.
+
 ---
 
 ## 🔗 Connect with Us
 We’ll be adding LinkedIn profiles here for each member:
 
 - [Pyae Khant Kyaw](https://www.linkedin.com/in/pyae-khant-kyaw-591726390/)  
-- [Min Khant Kyaw](#)  
+- [Min Khant Kyaw](https://www.linkedin.com/in/min-khant-kyaw-52973a392/)  
 - [Oakkar Aung](https://www.linkedin.com/in/oakkar-aung-b70077332/)  
-- [Han Lin Aung](#)  
+- [Han Lin Aung](https://www.linkedin.com/in/han-lin-aung-30025931a/)  
+
