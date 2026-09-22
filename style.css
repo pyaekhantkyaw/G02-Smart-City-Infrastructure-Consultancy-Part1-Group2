@@ -882,10 +882,19 @@ footer {
   max-width: 40ch;
 }
 
-.footer-brand strong {
+.footer-brand a {
   color: #fff;
   font-family: var(--font-display);
   font-size: 1.05rem;
+  font-weight: bold;
+  text-decoration: none;             /* no underline by default */
+  border-bottom: 1px solid transparent;
+}
+
+.footer-brand a:hover,
+.footer-brand a:focus {
+  color: #fff;                       /* stays white */
+  border-color: var(--color-accent); /* underline accent color on hover */
 }
 
 footer nav {
